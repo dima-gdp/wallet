@@ -7,9 +7,9 @@
         <span class="balance__value">{{ balance }}$</span>
       </div>
       <ul class="hero__currencies currencies">
-        <div class="currencies__column" v-for="c in currencies" :key="c.id">
+        <li class="currencies__column" v-for="c in currencies" :key="c.id">
           <CurrenciesCard :currency="c"/>
-        </div>
+        </li>
       </ul>
     </div>
   </section>
